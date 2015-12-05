@@ -1,0 +1,1 @@
+cd C:\xampp\php\php.exe -f C:\xampp\htdocs\nucleus\api\task\task_notifer.php

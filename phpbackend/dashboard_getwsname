@@ -1,0 +1,66 @@
+<?php
+ 
+/*
+ * Following code will get single product details
+ * A product is identified by product id (pid)
+ */
+ 
+// array for JSON response
+$response = array();
+ 
+// include db connect class
+require_once __DIR__ . '/db_connect.php';
+ 
+// connecting to db
+$db = new DB_CONNECT();
+ 
+// check for post data
+if (isset($_POST['workspace_id'])) {
+   
+    $workspace_id = $_POST['workspace_id'];
+ 
+    // get a product from products table
+    $result = mysql_query("Select * FROM workspaces WHERE workspace_id = $workspace_id");
+ 
+    if (!empty($result)) {
+        // check for empty result
+        if (mysql_num_rows($result) > 0) {
+ 
+            $row = mysql_fetch_array($result);
+            $response["workspace_name"] = $row["workspace_name"];
+ 
+            
+            
+            // success
+            $response["success"] = 1;
+ 
+           
+ 
+            // echoing JSON response
+            echo json_encode($response);
+        } else {
+            // no product found
+            $response["success"] = 0;
+            $response["message"] = "Unable to retrieve workspace name";
+ 
+            // echo no users JSON
+            echo json_encode($response);
+        }
+    } else {
+        // no product found
+        $response["success"] = 0;
+        $response["message"] = "Unable to retrieve workspace name";
+ 
+        // echo no users JSON
+        echo json_encode($response);
+    }
+} else {
+    // required field is missing
+    $response["errorCode"] = 1;
+    $response["success"] = 0;
+    $response["message"] = "Something went wrong";
+ 
+    // echoing JSON response
+    echo json_encode($response);
+}
+?>

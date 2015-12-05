@@ -1,0 +1,8 @@
+datemanips
+date_default_timezone_set('Asia/Manila');
+//24hours expiry
+$wew = date('m/d/Y h:i a', time()-86400);
+
+//converting phptime to datetime
+$phpdate = strtotime($wew);
+$phpdatex = date( 'Y-m-d H:i:s', $phpdate );
