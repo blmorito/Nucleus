@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingBottom="10dp"
+    android:background="@drawable/list_color_selector_light">
+
+    <TextView
+        android:id="@+id/txt_goalrowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="GOAL GOAL GOAL" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#262626"
+        />
+
+    <TextView
+        android:id="@+id/txt_goalrowCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_goalrowName"
+        android:layout_below="@+id/txt_goalrowName"
+        android:text="Created by BrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylleBrylle"
+        android:textSize="10sp"
+        android:maxLength="50"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#3f3f3f"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_goalrowName"
+        android:layout_toRightOf="@+id/txt_goalrowCreator"
+        android:text="•"
+        android:textSize="10sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:textColor="#3f3f3f"  />
+
+    <TextView
+        android:id="@+id/txt_goalrowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="August 5, 1994"
+        android:textSize="10sp"
+        android:textColor="#3f3f3f" />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/txt_goalrowDate"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#d9d9d9" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_goalrowCreator"
+        android:layout_below="@+id/view4"
+        android:textSize="14sp"
+        android:text="Tasks:"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:textColor="#262626"
+         />
+
+    <TextView
+        android:id="@+id/txt_goalrowTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:text="This is another task ->Brylle Orito - Due: Sept. 25, 2009\n"
+        android:textSize="13sp"
+        android:layout_marginRight="10dp"
+        android:textColor="#262626" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_goalrow"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_goalrowTasks"
+        android:layout_below="@+id/txt_goalrowTasks"
+        android:progress="50"
+        android:progressDrawable="@drawable/prog"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/btn_startGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/progressbar_goalrow"
+        android:layout_below="@+id/progressbar_goalrow"
+        android:text="Start Goal"
+        android:textColor="#fff"
+        android:background="@drawable/simpleblue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold" 
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/txt_goalrowId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressbar_goalrow"
+        android:layout_alignTop="@+id/txt_goalrowName"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_goalrowCreatorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_goalrowCreator"
+        android:layout_toRightOf="@+id/txt_goalrowName"
+        android:text="TextView"
+        android:visibility="gone" />
+
+</RelativeLayout>

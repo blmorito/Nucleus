@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9" >
+    
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#ececec">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal name and description" 
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#262626"
+                android:layout_marginBottom="5dp"
+               />
+
+            
+
+            <EditText
+                android:id="@+id/edt_editGoalName"
+                android:background="@drawable/edt_bg"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:maxLength="160"
+                android:hint="Name of the Goal" >
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_editGoalDesc"
+                android:background="@drawable/edt_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:hint="What is this goal all about? \nTip: Make it short and concise!" 
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLength="160"
+                android:maxLines="7"
+                android:lines="6"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="Note: Goals are important in the project. Make sure the revision of this goal will not confuse the members." />
+
+            <Button
+                android:id="@+id/btn_editGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save changes" 
+                android:layout_marginTop="10dp"
+                android:background="@drawable/simpleblue"
+                android:textColor="#fff"/>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

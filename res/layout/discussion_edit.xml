@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9" >
+  	
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+       >
+        
+         <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e0e0e0"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        
+        <EditText
+            android:id="@+id/edt_discSubEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:inputType="textMultiLine"
+            android:hint="Subject of the discussion"
+            android:maxLines="10"
+            android:layout_marginTop="10dp">
+
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_discMsgEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:inputType="textMultiLine"
+            android:hint="Type your message here.."
+            android:maxLines="10"
+            android:lines="13"
+            android:layout_marginTop="10dp" 
+            android:gravity="top">
+
+            
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_discEditSave"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Save" 
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:background="@drawable/simpleblue"/>
+
+            <Button
+                android:id="@+id/btn_discEditCancel"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Cancel" 
+                android:textColor="#00438e"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/simpleblueinverted"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

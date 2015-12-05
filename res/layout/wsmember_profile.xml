@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9" >
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff0040">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_wsmemprofPic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/default_user" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_wsmemprofName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_marginTop="10dp" 
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/txt_wsmemprofEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/txt_wsmemprofRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role: Workspace Creator"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btn_memprofMakeAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Make Admin" 
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#ff0040"
+                        android:textSize="15sp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/simplewyt"/>
+                    <Button
+                        android:id="@+id/btn_memprofRemoveAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Remove as admin" 
+                        android:textColor="#ff0040"
+                        android:textSize="15sp"
+                        android:background="@drawable/simplewyt"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+            
+        </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:background="#fff">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projects involved in"
+                android:textStyle="bold" 
+                android:textColor="#3f3f3f"/>
+
+            <LinearLayout
+                android:id="@+id/no_projects_involved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This person is currently not involved in any projects"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listviewWsMemProj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+            </ListView>
+            
+        </LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:focusable="true"
+	    android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Name"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_projSetName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Project Nucleus"
+             >
+
+            
+        </EditText>
+        
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+         
+          <EditText
+            android:id="@+id/edt_projSetDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:hint="This is a sample project description.."
+            android:gravity="top"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="7"
+             >
+
+            
+        </EditText>
+        
+            <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change project leader"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+            <Button
+              android:id="@+id/btn_changeLeader"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Leader: ..."
+              android:layout_marginTop="5dp"
+              android:textColor="#00438e"
+              
+              
+              android:background="@drawable/simpleblueinverted" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Change Project Deadline"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_projectSetDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deadline: ...." 
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/simplered"/>
+
+          <Button
+              android:id="@+id/btn_projSetSave"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Save changes"
+              android:layout_marginTop="30dp"
+              android:textColor="#fff"
+              
+              android:background="@drawable/simpleblue" />
+          <Button
+              android:id="@+id/btn_projSetCancel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Cancel changes"
+              android:layout_marginTop="10dp"
+              android:textColor="#00438e"
+              android:background="@drawable/simpleblueinverted" />
+        
+        
+    </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

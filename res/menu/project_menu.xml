@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+	    android:icon="@drawable/ic_action_new"
+	    android:title="aaa"
+	    android:showAsAction="ifRoom">
+	    <menu>
+	        <item
+	            android:id="@+id/project_addGoal"
+	            android:icon="@drawable/ic_addtask"
+	            android:title="Add a goal" />
+	        <item
+	            android:id="@+id/project_postDiscussion"
+	            android:icon="@drawable/ic_adddiscussion"
+	            android:title="Post a discussion" />
+	        <item
+	            android:id="@+id/project_uploadFile"
+	            android:icon="@drawable/ic_addfile"
+	            android:title="Upload a file" />
+	        
+	    </menu>
+	</item>
+	<item
+        android:id="@+id/project_refresh"
+        android:title="Refresh" 
+        android:showAsAction="never"/>
+	<item
+        android:id="@+id/project_people"
+        android:title="People on this project" 
+        android:showAsAction="never"/>
+	<item
+        android:id="@+id/project_settings"
+        android:title="Project Settings" 
+        android:showAsAction="never"/>
+	
+
+</menu>

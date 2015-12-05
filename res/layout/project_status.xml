@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#d9d9d9">
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_stat_ProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..." 
+            android:textColor="#3f3f3f"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_stat_ProjectCreator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." 
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•" 
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/txt_stat_ProjectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+        </LinearLayout>
+        <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#c0c0c0"
+             android:layout_marginTop="3dp"
+             android:layout_marginBottom="5dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Status:"
+            android:layout_marginRight="3dp" />
+
+            <TextView
+                android:id="@+id/txt_stat_ProjectStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+        </LinearLayout>
+            
+
+        <ProgressBar
+            android:id="@+id/prog_stat"
+            android:layout_marginTop="2dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/prog" />
+        <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#c0c0c0"
+             android:layout_marginTop="6dp"
+             android:layout_marginBottom="5dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of Members: " />
+
+            <TextView
+                android:id="@+id/txt_stat_NumberMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Total no. of goals: " />
+
+            <TextView
+                android:id="@+id/txt_stat_NumberGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="..." />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:background="#ff4040"
+            android:id="@+id/txt_stat_GoalsOpen"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="0"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center" />
+             <TextView
+                android:background="#1e90ff"
+            android:id="@+id/txt_stat_GoalsWIP"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="0"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center" />
+              <TextView
+                android:background="#00ff00"
+            android:id="@+id/txt_stat_GoalsDone"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="0"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_weight="1" />
+        
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:gravity="center" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In progress"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:gravity="center" 
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#c0c0c0"
+             android:layout_marginTop="6dp"
+             android:layout_marginBottom="5dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="Total No. Of Tasks: " />
+
+            <TextView
+                android:id="@+id/txt_stat_TasksTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Tasks: " />
+            <TextView
+            android:id="@+id/txt_stat_TasksCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..." />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed On Time: " />
+            <TextView
+            android:id="@+id/txt_stat_TasksCompletedOnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..." 
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:background="#00cc00"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Behind Schedule: " />
+            <TextView
+            android:id="@+id/txt_stat_TasksCompletedLate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:background="#ff4040"
+            android:text="..." />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

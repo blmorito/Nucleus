@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_people"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Successful!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" 
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You have successfully invited them to your workspace. They will receive an email regarding the invitation" 
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_backToDb"
+        android:background="@drawable/simpleblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go back to dashboard" 
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

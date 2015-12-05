@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_pmem_refresh"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Refresh"/>
+    <item
+        android:id="@+id/action_pmem_invite"
+        android:orderInCategory="80"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_add_person"
+        android:title="Invite people to this project"/>
+    <item
+        android:id="@+id/action_pmem_showinvited"
+        android:orderInCategory="120"
+        android:showAsAction="never"
+        android:title="Show pending members"/>
+    
+    
+
+</menu>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9" 
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+        
+        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="65dp"
+	       
+	        >
+	        
+	        <RelativeLayout 
+	            android:id="@+id/testhead" 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            android:orientation="vertical"
+	            android:background="#fff"
+	            android:paddingBottom="10dp"
+	            android:layout_marginBottom="10dp">
+	
+	            <ImageView
+	                android:id="@+id/img_discussView"
+	                android:layout_width="60dp"
+	                android:layout_height="60dp"
+	                android:src="@drawable/default_user" 
+	                android:layout_marginTop="7dp"
+	                android:layout_marginLeft="10dp"/>
+	
+	            <TextView
+	                android:id="@+id/txt_discussViewAuthor"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignTop="@+id/img_discussView"
+	                android:layout_toRightOf="@+id/img_discussView"
+	                android:text="Brylle Orito"
+	                android:textColor="#262626"
+	                android:textStyle="bold" 
+	                android:textSize="15sp"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="9dp"/>
+	
+	            <TextView
+	                android:id="@+id/txt_discussViewDate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/txt_discussViewAuthor"
+	                android:layout_below="@+id/txt_discussViewAuthor"
+	                android:text="Posted on April 5, 1994"
+	                android:textSize="10sp"
+	                android:textColor="#3f3f3f" />
+	            <View
+			        android:id="@+id/view1"
+			        android:layout_width="match_parent"
+			        android:layout_height="0.8dp"
+			        android:layout_below="@+id/img_discussView"
+			        android:layout_marginBottom="5dp"
+			        android:layout_marginTop="5dp"
+			        android:background="#d9d9d9" />
+	
+	            <TextView
+	                android:id="@+id/txt_discussViewSubject"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/view1"
+	                android:text="THIS IS A DISCUSSION SUBJECT"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:textStyle="bold"
+	                android:textColor="#262626" 
+	                android:maxLines="10"
+	                android:ellipsize="end"
+	                android:textSize="19sp"/>
+	            <View
+			        android:id="@+id/view2"
+			        android:layout_width="match_parent"
+			        android:layout_height="0.8dp"
+			        android:layout_below="@+id/txt_discussViewSubject"
+			        android:layout_marginBottom="5dp"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:background="#d9d9d9" />
+	
+	            <TextView
+	                android:id="@+id/txt_discussViewBody"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/view2"
+	                android:text="THe quick brown fox jumpes over the lazy elephant."
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:textSize="14sp" 
+	                android:autoLink="web"/>
+	            
+	        </RelativeLayout>
+	        
+	        <LinearLayout android:id="@+id/no_comments"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:visibility="gone"
+	            android:layout_marginTop="10dp"
+	            android:padding="10dp">
+	
+	            <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="No comments on this discussion"
+	                android:layout_gravity="center"
+	                android:textColor="#3f3f3f" />
+	            
+	        </LinearLayout>
+	        
+	        <ListView
+	             android:id="@+id/lv_discussView"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:divider="@null"
+	             android:smoothScrollbar="true" >
+	         </ListView>
+	        
+	        
+	        
+	    </LinearLayout>
+	   
+	        <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_alignParentBottom="true">
+	        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#adadad"></LinearLayout>
+	        <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        >
+	        
+         <EditText
+            android:id="@+id/edt_discussViewComment"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:minLines="2"
+            android:maxLines="4"
+            
+            android:ems="10" 
+            
+            android:hint="Add a comment here.."
+            
+            
+            android:background="@drawable/edt_bg2"/>
+
+        <Button
+	            android:id="@+id/btn_discussViewPost"
+	            android:layout_width="0dp"
+	            android:layout_weight="0.2"
+	            android:layout_height="match_parent"
+	            
+	            android:background="@drawable/simplewyt"
+	            android:textColor="#00438e"
+	            android:text=""
+	            android:drawableRight="@drawable/ic_action_send_nowb"
+	            android:paddingRight="5dp"
+	            android:paddingLeft="5dp"
+	            android:drawablePadding="0dp"
+	            android:paddingBottom="10dp"
+	             />
+	        
+	    </LinearLayout>
+	        
+	        </LinearLayout>
+    </RelativeLayout>
+        
+	    
+    
+   
+    
+
+</LinearLayout>

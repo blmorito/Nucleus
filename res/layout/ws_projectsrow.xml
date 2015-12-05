@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_color_selector"
+    android:paddingBottom="5dp" >
+
+    <ImageView
+        android:id="@+id/img_projectPic"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo_icon" />
+
+    <TextView
+        android:id="@+id/txt_showProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_projectPic"
+        android:layout_toRightOf="@+id/img_projectPic"
+        android:text="Project Atom"
+        android:layout_marginTop="0dp"
+        android:textColor="@drawable/list_item_text_selector"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_showProjectDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_showProjectName"
+        android:layout_toRightOf="@+id/img_projectPic"
+        android:text="This project is for the  of no one"
+        android:textColor="@drawable/list_item_text_selector"
+        android:maxLines="4"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/txt_showProjectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_showProjectLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_marginLeft="3dp"
+        android:text="Bryllez" 
+        android:textColor="@drawable/list_item_text_selector"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txt_showProjectDesc"
+        android:layout_toRightOf="@+id/img_projectPic"
+        android:src="@drawable/ic_action_person" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Leader:"
+        android:textStyle="bold"
+        android:textColor="@drawable/list_item_text_selector" />
+
+</RelativeLayout>

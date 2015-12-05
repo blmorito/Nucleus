@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item
+        android:id="@+id/action_goalview_addtask"
+        android:title="Add a goal" 
+        android:showAsAction="ifRoom"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_new"/>
+	<item
+        android:id="@+id/action_goalview_refresh"
+        android:title="Refresh" 
+        android:orderInCategory="120"
+        android:showAsAction="never"
+        />
+	<item
+        android:id="@+id/action_goalview_editgoal"
+        android:title="Edit this goal" 
+        android:orderInCategory="150"
+        android:showAsAction="never"
+        />
+	<item
+        android:id="@+id/action_goalview_deletegoal"
+        android:title="Delete this goal" 
+        android:orderInCategory="170"
+        android:showAsAction="never"
+        />
+	
+	<item
+        android:id="@+id/action_goalview_backtodashboard"
+        android:title="Go back to dashboard" 
+        android:orderInCategory="190"
+        android:showAsAction="never"
+        />
+	
+	
+
+</menu>

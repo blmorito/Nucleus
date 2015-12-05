@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2" >
+    <ScrollView  android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:paddingRight="10dp"
+	    android:paddingLeft="10dp"
+	    android:layout_marginTop="10dp"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project name and description"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:background="@drawable/edt_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:hint="Give your project a name here"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                
+                >
+
+                
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_projectDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:background="@drawable/edt_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:hint="What is the project all about? Add details here."
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:maxLines="7"
+                android:lines="5"
+                android:maxLength="400"
+                 />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite other people to your team"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"  />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collaboration is very important. Add people to your team by sending them an email!"
+                
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+               
+
+                <EditText
+                    android:id="@+id/edt_addEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textEmailAddress" 
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_bg"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+                    android:ems="10"
+                    android:layout_marginRight="4dp" 
+                    android:hint="Add member by email"/>
+
+                <Button
+                    android:id="@+id/btn_addEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Add"
+                    android:background="@drawable/simplebtn"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+            <LinearLayout 
+		        android:id="@+id/container"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		    </LinearLayout>
+		    <LinearLayout 
+		       
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+
+		        <TextView
+		            android:id="@+id/textView4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Project Deadine"
+		            android:textStyle="bold"
+		            android:layout_marginTop="10dp" />
+
+		        <TextView
+		            android:id="@+id/textView5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Deadlines are important to a project. It helps people visualize the amount of work and time the project is demanding" />
+
+		        <Button
+		            android:id="@+id/btn_deadline"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/simpleblueinverted"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#00438e"
+		            android:text="Deadline: Tomorrow (Tap to change)"
+		            android:drawableLeft="@drawable/ic_action_go_to_today" 
+		            android:gravity="center"
+		            android:drawablePadding="0dp"
+		            />
+
+		        <Button
+		            android:id="@+id/btn_startProject"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Start Project" 
+		            android:background="@drawable/simpleblue"
+		            android:textColor="#fff"
+		            android:layout_marginTop="15dp"/>
+		        <Button
+		            android:id="@+id/btn_skipProject"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Skip Project Creation" 
+		            android:background="@drawable/simplered"
+		            android:textColor="#fff"
+		            android:layout_marginTop="15dp"
+		            android:visibility="gone"/>
+		        
+		    </LinearLayout>
+		            
+		            
+	            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

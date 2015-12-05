@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9" >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e0e0e0"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        
+        <EditText
+            android:id="@+id/edt_discSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:inputType="textMultiLine"
+            android:hint="Subject of the discussion"
+            android:maxLines="10"
+            android:layout_marginTop="10dp">
+
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_discMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:inputType="textMultiLine"
+            android:hint="Type your message here.."
+            android:maxLines="10"
+            android:lines="13"
+            android:layout_marginTop="10dp" 
+            android:gravity="top">
+
+            
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note: Only post discussions that are relevant to the project. Any discussions that are irrelevant or not related to the project in any way are subject for deletion" 
+            android:layout_marginTop="10dp"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

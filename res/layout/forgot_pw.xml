@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00253a" 
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password doesn't \nwork? Can't sign in?\nForgot your password?"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="Enter your email address below and we will send you instructions to reset your password." />
+
+    <EditText
+        android:id="@+id/edt_forgotEmail"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" 
+        android:background="@drawable/edt_bg"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Enter email address"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_forgotEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/simplebtn"
+        android:text="Send me reset instructions" 
+        android:textColor="#fff"
+       />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remembered your password?" 
+        android:textColor="#fff"
+        android:paddingTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txt_goBackToSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go back to Sign In"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</LinearLayout>

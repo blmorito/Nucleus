@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9d9d9" 
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_marginBottom="70dp"
+        >
+        
+        <RelativeLayout
+    	    android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/txt_goalviewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Goal Name"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_goalviewCreator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_goalviewName"
+                android:layout_below="@+id/txt_goalviewName"
+                android:text="Added by Brylle"
+                android:layout_marginRight="5dp"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txt_goalviewDateCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_goalviewCreator"
+                android:layout_toRightOf="@+id/txt_goalviewCreator"
+                android:text="Aug 5, 2009"
+                android:textSize="10sp" 
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_goalviewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_goalviewDateCreated"
+                android:layout_toRightOf="@+id/txt_goalviewDateCreated"
+                android:text="Status: Loading.."
+                android:textSize="10sp" />
+            
+            <View
+		        android:id="@+id/view4"
+		        android:layout_width="match_parent"
+		        android:layout_height="0.8dp"
+		        android:layout_below="@+id/txt_goalviewStatus"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginTop="5dp"
+		        android:background="#d9d9d9" />
+
+            <TextView
+                android:id="@+id/txt_goalviewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view4"
+                android:layout_below="@+id/view4"
+                
+                android:text="Loading...." />
+
+	    </RelativeLayout>
+
+        
+	    
+        <ListView
+        android:id="@+id/listViewCheckTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+	            
+	    </ListView>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="10dp"
+		    android:orientation="vertical"
+		    android:background="#d9d9d9"></LinearLayout>
+        <TextView
+           
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="#004792"
+            android:textColor="#fff"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="Comments" 
+            />
+    	
+        <ListView
+            
+	        android:id="@+id/listViewCheckTasksComments"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        
+         >
+	            
+	    </ListView>
+	    
+        <LinearLayout 
+            android:id="@+id/no_goal_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+             <TextView
+            android:id="@+id/txt_no_commentsONgoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No comments found. \nGot something to talk about this goal? Status reports? Discuss it here!" 
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+        </LinearLayout>
+	    
+        
+	   
+    
+        
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    
+        <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#adadad"></LinearLayout>
+        
+	        <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="match_parent"  >
+	        
+         	<EditText
+	            android:id="@+id/edt_goalComment"
+	            android:layout_width="0dp"
+	            android:padding="10dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.8"
+	            android:inputType="textMultiLine"
+	            android:singleLine="false"
+	            android:minLines="2"
+	            android:maxLines="4"
+	            
+	            android:ems="10" 
+	            
+	            android:hint="Add a comment here.."
+	            
+	            
+	            android:background="@drawable/edt_bg2"/>
+
+      		  <Button
+	            android:id="@+id/btn_goalComment"
+	            android:layout_width="0dp"
+	            android:layout_weight="0.2"
+	            android:layout_height="match_parent"
+	            
+	            android:background="@drawable/simplewyt"
+	            android:textColor="#00438e"
+	            android:text=""
+	            android:drawableRight="@drawable/ic_action_send_nowb"
+	            android:paddingRight="5dp"
+	            android:paddingLeft="5dp"
+	            android:drawablePadding="0dp"
+	            android:paddingBottom="10dp"
+	             />
+	        
+	    </LinearLayout>
+	        
+	        </LinearLayout>
+    </RelativeLayout>
+
+    
+
+    
+</LinearLayout>

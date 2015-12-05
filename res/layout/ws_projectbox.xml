@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/cb_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:textSize="20sp"
+        android:text="CheckBox" 
+        android:textColor="#000"
+        android:focusable="false"
+        android:button="@drawable/chkbox"
+        
+      />
+
+    <TextView
+        android:id="@+id/txt_projectidcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_marginLeft="49dp"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:text="TextView" 
+        android:visibility="gone"/>
+
+</RelativeLayout>
