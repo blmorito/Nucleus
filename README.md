@@ -3,7 +3,9 @@
 This is an android project collaboration app that uses PHP and MySQL
 for the backend components. This was made for our thesis.
 This is my first ever mobile app so there might be bugs and glitches
-or slow performance.
+or slow performance. And also really really bad practices and no good OOP approach.
+Planning to refactor this project with what I learned so far in my internship and
+programming books.
 
 ## Installation
 
